@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "vibrateapp"
+        versionCode = "1"
+        version     = "0.1.0">
+ 
+    <name>Totorial Test</name>
+ 
+    <description>
+        A simple app to test the vibrating function
+    </description>
+ 
+    <author>
+        Sander Valstar
+    </author>
+
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="org.apache.cordova.camera" />
+
+
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+
+</widget>
