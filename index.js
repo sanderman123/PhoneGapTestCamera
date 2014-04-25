@@ -17,7 +17,7 @@ $(document).ready(function(){
 				   //target.css("background-image", imageURI);
 				   console.log("cccc");
 				   //$("body").css("background-image", imageURI);
-				   $("#red").prepend('<img id="theImg" src= ' +imageURI+' width=100%>');
+				   $("#red").prepend('<img id="theImg" src= ' +imageURI+' width=100% >');
 				}
 
 				function onFail(message) {
