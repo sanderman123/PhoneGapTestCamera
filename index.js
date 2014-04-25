@@ -25,7 +25,8 @@ $(document).ready(function(){
 					alert('Failed because: ' + message);
 				}
 			} else if(target.is("#yellow")) {
-				$("#red").prepend('<img id="theImg2" src="logo.png" />');
+				//$("#red").prepend('<img id="theImg2" src="logo.png" />');
+				$("#theImg").remove();
 			} else {
 				//$("body").prepend('<img id="theImg" src="img/logo.png" />');
 				//$("body").css("background-image", url("img/logo.png"));
