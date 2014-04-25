@@ -6,8 +6,8 @@ $(document).ready(function(){
 		var target = $( event.target );
 		if(target.is("div")){
 			navigator.notification.vibrate(500);
-
-			if(target.is("#blue")){				
+			if(target.is("#blue")){			
+				//	
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });				
 				
 				function onSuccess(imageURI) {				   				   
@@ -21,13 +21,15 @@ $(document).ready(function(){
 					console.log("dddd");
 					alert('Failed because: ' + message);
 				}
+				
+				$("#red").prepend('<img id="theImg" src="logo.png">');//' height="180" width="100">');
 
 			} else {
 				target.fadeOut("slow",function(){						
 				});				
 			}
 		} else {
-			$("#red").remove("#theImg");
+			//$("#red").remove("#theImg");
 			$("div").fadeIn("slow");	
 		}
 	})			
