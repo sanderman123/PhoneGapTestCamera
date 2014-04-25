@@ -6,8 +6,8 @@ $(document).ready(function(){
 
 		var target = $( event.target );
 		if(target.is("div")){
-			if(target.is("#blue")){
-				navigator.notification.vibrate(500);
+			navigator.notification.vibrate(500);
+			if(target.is("#blue")){				
 				console.log("aaaa");
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
 				console.log("bbbb");
@@ -27,12 +27,12 @@ $(document).ready(function(){
 			} else {
 				//$("body").prepend('<img id="theImg" src="img/logo.png" />');
 				//$("body").css("background-image", url("img/logo.png"));
-				navigator.notification.vibrate(500);
+				//navigator.notification.vibrate(500);
 				target.fadeOut("slow",function(){						
 				});				
 			}
 		} else {
-			//$("#red").css('background-image', 'none');
+			//$("#red").('background-image', 'none');
 			$("div").fadeIn("slow");	
 		}
 	})			
