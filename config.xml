@@ -16,7 +16,9 @@
     </author>
 
     <gap:plugin name="org.apache.cordova.vibration" />
-    <gap:plugin name="Camera" value="org.apache.cordova.core.CameraLauncher" />
+    <!--<gap:plugin name="Camera" value="org.apache.cordova.core.CameraLauncher" />-->    
+    <plugin name="Camera" value="org.apache.cordova.core.camera.camera" />
+        
     
     <!--
         List is on:
