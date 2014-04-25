@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "vibrateapp"
+        id          = "vibrateappcamera"
         versionCode = "1"
         version     = "0.1.0">
  
     <name>Camera Totorial Test</name>
  
     <description>
-        A simple app to test the vibrating function
+        A simple app to test the vibrating and camerafunction
     </description>
  
     <author>
@@ -16,7 +16,16 @@
     </author>
 
     <gap:plugin name="org.apache.cordova.vibration" />
-    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="Camera" value="org.apache.cordova.core.CameraLauncher" />
+    
+    <!--
+        List is on:
+        http://docs.phonegap.com/en/edge/guide_phonegap-build_index.md.html
+
+        <gap:plugin name="Media" value="org.apache.cordova.core.AudioHandler" />
+        <gap:plugin name="Capture" value="org.apache.cordova.core.Capture" />
+        <gap:plugin name="SplashScreen" value="org.apache.cordova.core.SplashScreen" />
+    -->
 
 
     <feature name="http://api.phonegap.com/1.0/notification"/>

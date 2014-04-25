@@ -6,6 +6,7 @@ $(document).ready(function(){
 		var target = $( event.target );
 		if(target.is("div")){
 			navigator.notification.vibrate(500);
+
 			if(target.is("#blue")){			
 				//	
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });				
@@ -18,11 +19,11 @@ $(document).ready(function(){
 				}
 
 				function onFail(message) {
-					console.log("dddd");
+					//
 					alert('Failed because: ' + message);
 				}
 				
-				$("#red").prepend('<img id="theImg" src="logo.png">');//' height="180" width="100">');
+				//$("#red").prepend('<img id="theImg" src="logo.png">');//' height="180" width="100">');
 
 			} else {
 				target.fadeOut("slow",function(){						
