@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	$(document).click(function(event){
-		$("#red").css("background","img/logo.png");
+		//$("#red").css("background","img/logo.png");
 		//$("#red").prepend('<img id="theImg" src="img/logo.png" />');
 
 
 		var target = $( event.target );
 		if(target.is("div")){
-			if(target.is("#red")){
+			if(target.is("#blue")){
 				navigator.notification.vibrate(500);
 				console.log("aaaa");
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
@@ -32,7 +32,7 @@ $(document).ready(function(){
 				});				
 			}
 		} else {
-			$("#red").css('background-image', 'none');
+			//$("#red").css('background-image', 'none');
 			$("div").fadeIn("slow");	
 		}
 	})			
