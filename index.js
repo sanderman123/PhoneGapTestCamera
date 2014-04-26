@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var target = $( event.target );
 		if(target.is("div")){
 			navigator.notification.vibrate(500);
-			if(target.is("#red") || $("#red").has(target).length > 0){				
+			if(target.is("#red") || target.is("#theImg")){				
 				console.log("aaaa");
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
 				console.log("bbbb");
@@ -17,6 +17,7 @@ $(document).ready(function(){
 				   //target.css("background-image", imageURI);
 				   console.log("cccc");
 				   //$("body").css("background-image", imageURI);
+				   $("#theImg").remove();
 				   $("#red").prepend('<img id="theImg" src= ' +imageURI+' width=100% >');
 				}
 
