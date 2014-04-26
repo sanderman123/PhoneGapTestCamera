@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var target = $( event.target );
 		if(target.is("div")){
 			navigator.notification.vibrate(500);
-			if(target.is("#red") || target.is("#theImg")){				
+			if(target.is("#blue")){				
 				console.log("aaaa");
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
 				console.log("bbbb");
