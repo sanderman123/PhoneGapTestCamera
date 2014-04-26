@@ -1,9 +1,5 @@
 $(document).ready(function(){
 	$(document).click(function(event){
-		//$("#red").css("background","img/logo.png");
-		//$("#red").prepend('<img id="theImg" src="img/logo.png" />');
-
-
 		var target = $( event.target );
 		if(target.is("div")){
 			navigator.notification.vibrate(500);
